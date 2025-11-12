@@ -1,0 +1,49 @@
+{
+    "uart_boot_methods": [
+        {
+            "mcu_package": [
+                {
+                    "device": "a1",
+                    "sdk": "https://jfrog.carizon.work/artifactory/project-snapshot-local/Pro-J6M-ACar/Common/j6/mcu/weekly/Release/Pro-J6M-ACar_Common_J6_MCU_V4.2.14_20250918101941-weekly.zip"
+                },
+                {
+                    "device": "b2",
+                    "sdk": "https://jfrog.carizon.work/artifactory/project-snapshot-local/Lite-J6M-ACose/Common/j6/mcu/weekly/Release/Lite-J6M-ACose_Common_J6_MCU_V200.0.26_20250919163338-weekly.zip"
+                }
+            ],
+            "loading_step": [
+                {
+                    "uart_port": "mcu",
+                    "img_data": [
+                        "cmd_load_hsmfw",
+                        "hsmfw_se.pkg",
+                        "cmd_exit_hsmfw"
+                    ]
+                },
+                {
+                    "uart_port": "hsm",
+                    "img_data": [
+                        "fpt.img",
+                        "SBL.img"
+                    ]
+                },
+                {
+                    "uart_port": "mcu",
+                    "img_data": [
+                        "spl.img",
+                        "J6_MCU_DEBUG.bin"
+                    ]
+                },
+                {
+                    "uart_port": "soc",
+                    "img_data": [
+                        "acore_cfg.img",
+                        "bl31.img",
+                        "optee.img",
+                        "uboot.img"
+                    ]
+                }
+            ]
+        }
+    ]
+}

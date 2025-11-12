@@ -1,0 +1,25 @@
+{
+    "serial": {
+        "soc": {
+            "port": "/dev/serial/by-name/cicd-vw/vw-j6",
+            "baudrate": 921600
+        },
+        "mcu": {
+            "port": "/dev/serial/by-name/cicd-vw/vw-mcu",
+            "baudrate": 921600
+        },
+        "hsm": {
+            "port": "/dev/serial/by-name/cicd-vw/vw-hsm",
+            "baudrate": 921600
+        }
+    },
+    "ssh": {
+        "soc": {
+            "name": "J6",
+            "user": "root",
+            "addr": "192.168.2.62",
+            "port": 22,
+            "pswd": ""
+        }
+    }
+}

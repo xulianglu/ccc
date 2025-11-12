@@ -1,0 +1,10 @@
+cicd-vw-ngx-a1:
+  vw_j6:
+    ipv4addr: 192.168.2.62
+    sshv4: root@192.168.2.62
+    serial: /dev/serial/by-name/cicd-vw/vw-j6
+    shell_prompt: "root@hobot"
+    uboot_prompt: "Palma#"
+    login_prompt: "mark system success"
+  host:
+    ipv4addr: eth0

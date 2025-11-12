@@ -1,0 +1,29 @@
+{
+
+    "prompts": {
+        "uboot": [
+            "Palma#",
+            "Hobot\\$"
+        ],
+        "shell": [
+            "root@hobot",
+            "root@j6[e,m]-ngx-[a-z]{1}[1-9]{1}",
+            "root@ngx-pro-[a,b]",
+            "root@j6[e,m]-lite-ngx-[a-z]{1}[1-9]{1}",
+            "root@j6[e,m,h]-pro-[a,c]car-[a-z]{1}[1-9]{1}"
+        ],
+        "mcu": [
+            "horizon:/\\$"
+        ],
+        "login": [
+            "mark system success",
+            "login"
+        ]
+    },
+    "timeout": {
+        "kernel_shutdown": 10,
+        "uboot_to_kernel": 40,
+        "power_to_kernel": 60,
+        "power_to_mcu": 20
+    }
+}
